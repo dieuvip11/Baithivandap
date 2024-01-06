@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TranHoangDieu_131
 {
-    [Table("Lophoc")]
+    [Table("Lophocs")]
     public class Lophoc 
     {
         
@@ -13,6 +13,9 @@ namespace TranHoangDieu_131
         public int TenLop { get; set; }
 
         public double SoTT { get; set; }
+        public ICollection<Sinhvien>? Sinhvien {get; set;}
+
+        
 
     }
 }
